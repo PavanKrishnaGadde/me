@@ -1447,3 +1447,15 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.message-sucsess {
+  background-color: green;
+  color: white;
+  width: auto;
+}
+
+.message-failure {
+  background-color: red;
+  color: white;
+  width: auto;
+}

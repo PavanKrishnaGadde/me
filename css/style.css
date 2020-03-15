@@ -73,12 +73,11 @@ figure {
   position: relative; }
 
 #colorlib-aside {
-  padding-top: 1em;
-  padding-bottom: 40px;
+  padding-top: 40px;
   float: left;
   width: 300px;
   position: fixed;
-  overflow: scroll;
+  overflow: hidden;
   z-index: 1001;
   background: #f2f3f7;
   -webkit-transition: 0.5s;
@@ -92,7 +91,7 @@ figure {
       -ms-transform: translateX(-300px);
       -o-transform: translateX(-300px);
       transform: translateX(-300px);
-      padding-top: 4em; } }
+      padding-top: 40px; } }
   #colorlib-aside .author-img {
     width: 150px;
     height: 150px;
@@ -129,12 +128,13 @@ figure {
     #colorlib-aside #colorlib-main-menu ul {
       text-align: center;
       margin: 0;
+      margin-top: 8px;
       padding: 0; }
       @media screen and (max-width: 768px) {
         #colorlib-aside #colorlib-main-menu ul {
-          margin: 0 0 2em 0; } }
+          margin: 8px 0 1em 0; } }
       #colorlib-aside #colorlib-main-menu ul li {
-        margin: 0 0 10px 0;
+        margin: 0 7px 10px 7px;
         padding: 0;
         list-style: none;
         font-size: 12px;
@@ -1458,4 +1458,7 @@ button {
   background-color: red;
   color: white;
   width: auto;
+}
+.contact-icons ul li{
+  display: inline;
 }

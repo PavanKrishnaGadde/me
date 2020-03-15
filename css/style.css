@@ -1438,7 +1438,7 @@ body.offcanvas {
   width: 75%;
 }
 
-.submit-button {
+button {
   background: #2c98f0;
   color: #fff;
   border: 2px solid #2c98f0;

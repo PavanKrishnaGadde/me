@@ -215,6 +215,10 @@ figure {
             outline: none;
             color: #2c98f0; }
 
+.intro-color {
+  color: #FFFFFF;
+}
+
 .container-wrap {
   max-width: 1170px;
   margin: 0 auto; }

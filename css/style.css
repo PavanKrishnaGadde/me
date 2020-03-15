@@ -219,8 +219,8 @@ figure {
 
 .container-wrap {
   max-width: 1170px;
-  margin: 0 auto; }
-
+  margin: 0 auto;
+}
 #colorlib-main {
   width: calc(100% - 300px);
   float: right;
@@ -1429,3 +1429,21 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+.form-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  width: 75%;
+}
+
+.submit-button {
+  background: #2c98f0;
+  color: #fff;
+  border: 2px solid #2c98f0;
+  width: 75px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

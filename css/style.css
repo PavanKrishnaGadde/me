@@ -1449,15 +1449,19 @@ button {
 }
 
 .message-sucsess {
-  background-color: green;
-  color: white;
-  width: auto;
+  color: green;
+  text-align: center;
+  border-radius: 15px;
+  opacity: 0.7;
+  border: 1px solid green;
 }
 
 .message-failure {
-  background-color: red;
-  color: white;
-  width: auto;
+  color: red;
+  text-align: center;
+  border-radius: 15px;
+  opacity: 0.7;
+  border: 1px solid red;
 }
 .contact-icons ul li{
   display: inline;

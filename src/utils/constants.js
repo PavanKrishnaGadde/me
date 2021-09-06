@@ -68,37 +68,44 @@ export const blogData = [
         imageUrl: 'images/blog3.jpg',
         animation: 'fadeInLeft',
         description: 'Science isn’t just a subject in College. It’s a part of our everyday lives. Science may be an integral part of your life and you may not even realize it. Science is all around us – it’s in our homes, the vehicles we drive, outside in nature and in the foods we eat. '
-    } 
+    }
 ]
 
 export const timelineData = [
     {
         id: 1,
-        position: 'Asociate Software Engineer at Amdocs',
-        time:'2019-present',
-        animation: 'fadeInLeft',
-        description: 'I am currenly working as full stack developer in degital team of Amdocs. My work includes building responsive applications using react framwork in front and RESTful micro-services in bckend using SpringBoot framework. I also good knowledge in using continous deployment and integration tools like perforce and jenkins'
+        position: 'Applications Engineer at Oracle',
+        time:'Septemer 2021 - present',
+        animation: 'fadeInToop',
+        description: 'I\'m working as full stack developer in Oracle Cloud Infrastructure team. My work includes building responsive applications using react framwork in front and RESTful micro-services in backend using SpringBoot framework.'
     },
     {
         id: 2,
+        position: 'Associate Software Engineer at Amdocs',
+        time:'July 2019 - Septemer 2021',
+        animation: 'fadeInLeft',
+        description: 'I worked as full stack developer in digital team of Amdocs. My work includes building responsive applications using react framwork in front and RESTful APIs in backend using SpringBoot framework. I also good knowledge in using continous deployment and integration tools like perforce and jenkins'
+    },
+    {
+        id: 3,
         position: 'Internship at SanDisk',
-        time:'2018',
+        time:'May 2018 - July 2018',
         animation: 'fadeInLeft',
         description: 'I have done summer intership at SanDisk (Western Digital) as a Software and Hardware Intern in the Systems Design team. My major part work was on python and Verilog. I designed an application for fault detection and performance analysis'
     },
     {
-        id: 3,
-        position: 'Undergraduation at NIT Warangal',
-        time:'2015-2019',
+        id: 4,
+        position: 'Bachelor of Technology at NIT Warangal',
+        time:'2015 - 2019',
         animation: 'fadeInTop',
         description: 'I am pursuing my under-graduation studies with major in E.C.E (Electronics & Communication Engineering). I have taken courses like DSA, OOPs, Computer Networks, IOT, Web-Data Management over the years and have better understanding of these subjects.I have also been part of S.B.G.(Student Body Govenance) scince my first year of college.'
     },
     {
-        id: 4,
+        id: 5,
         position: 'Primary and Higher Education',
-        time:'2003-2015',
+        time:'2003 - 2015',
         animation: 'fadeInLeft',
         description: 'I have completed my higher secondary education with major subjects as Physics,Chemistry & Maths with 98.6 merit. During my time at school, I have developed interest in solving complex problems of the fundamental physics which helped me to improve my understanding of any problem and also my mathematical skills to actually solve the problems.'
     },
-      
+
 ]

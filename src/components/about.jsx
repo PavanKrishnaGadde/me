@@ -13,8 +13,9 @@ export default class About extends Component {
                                         <div className="about-desc">
                                             <span className="heading-meta">About Us</span>
                                             <h2 className="colorlib-heading">Who Am I?</h2>
-                                            <p>I am a computer grad student from National Institute of Technology Warangal with ECE as my major.I love exploring new technologies and often amazed by the progress we as a human species have mad so far in the recent years (apart from the headphone-jack part!!)</p>
-                                            <p>I have started reflecting my ideas and thougths through the medium of words recently so spelling and grammer mistaks are very often.You can write me back if you spot any and don't want to live anymore :P </p>
+                                            <p>I'm a full-stack developer and computer programmer with an avid interest in Data Structures, Algorithms and Optimization. As a core programmer, I love taking challenges and love being part of the solution. </p>
+                                            <p>Hands-on experience in Analysis, Development and Implementation. Solid Programming expertise in Java, JavaScript, Object Oriented analysis/methodologies. Enthusiastic team player, a fast learner with creative problem solving skills, good coding and communication skills. My Tech Stack includes - React/Redux, Springboot/Hibernate, Java/JavaScript/Html/CSS.</p>
+                                            <p>Would be interested in getting exposure to domains providing intellectually challenging work in the field of computers for proving and enriching my knowledge and skills.</p>
                                         </div>
                                     </div>
                                 </div>

@@ -26,7 +26,7 @@ export default class Blog extends Component {
 						<div className="row">
 							{
 								blogData && blogData.filter(d => d.id <= this.state.visibleBlogsCount).map((data) => (
-									<div className={`col-md-4 col-sm-6 ${data.id<=3 ? 'animate-box':''}`} data-animate-effect={data.animation}>
+									<div className={`col-md-4 col-sm-6 ${data.id<=0 ? 'animate-box':''}`} data-animate-effect={data.animation}>
 										<div className="blog-entry">
 											<a href={data.refUrl} className="blog-img"><img src={data.imageUrl} className="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com" /></a>
 											<div className="desc">

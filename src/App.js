@@ -1,29 +1,45 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
-import Sidebar from './components/sidebar'
-import Introduction from './components/introduction'
-import About from './components/about'
-import Timeline from './components/timeline'
-import Photography from './components/photography'
-import Blog from './components/blog'
-import ContactMe from './components/contactme';
+import Main from './pages/Main';
+import Blog from './components/blog';
+import Photography from './components/photography';
 
 class App extends Component {
   render() {
     return (
-      <div id="colorlib-page">
-        <div id="container-wrap">
-         	<Sidebar />
-          <div id="colorlib-main">
-            <Introduction />
-            <About />
-            <Timeline />
-            <Photography />
-            <Blog />
-            <ContactMe />
-          </div>
-      	</div>
-      </div>
+      <Router>
+        <div>
+          <ul className="row">
+            <li className="col-sm-4">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="col-sm-4">
+              <Link to="/blog">blog</Link>
+            </li>
+            <li className="col-sm-4">
+              <Link to="/photography">Photography</Link>
+            </li>
+          </ul>
+
+          <Switch>
+            <Route path="/photography">
+              <Photography />
+            </Route>
+            <Route path="/blog">
+              <Blog />
+            </Route>
+            <Route path="/">
+              <Main />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }

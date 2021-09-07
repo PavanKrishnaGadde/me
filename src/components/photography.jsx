@@ -27,7 +27,7 @@ export default class Photography extends Component {
 						<div className="row">
 							{
 								photographyData && photographyData.filter(d => d.id <= this.state.visiblePhotoCount).map((data) => (
-									<div key={data.id} className={`col-md-4 ${data.id<=3 ? 'animate-box':''}`} data-animate-effect={data.animation}>
+									<div key={data.id} className={`col-md-4 ${data.id<=0 ? 'animate-box':''}`} data-animate-effect={data.animation}>
 										<div className="project" style={{ backgroundImage: `url(${data.imageUrl})` }}>
 											<div className="desc">
 												<div className="con">
@@ -46,7 +46,7 @@ export default class Photography extends Component {
 							}
 						</div>
 						{this.state.visiblePhotoCount<photographyData.length && <div className="row">
-							<div className="col-md-4 animate-box">
+							<div className={`col-md-4 ${photographyData.length<=0 ? 'animate-box':''}`}>
 								<button onClick={this.onLoadMore} className="btn btn-primary btn-lg btn-load-more">Load more <i className="icon-reload" /></button>
 							</div>
 						</div>}

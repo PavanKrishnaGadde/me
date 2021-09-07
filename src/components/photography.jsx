@@ -3,6 +3,12 @@ import { photographyData } from '../utils/constants';
 
 
 export default class Photography extends Component {
+	constructor(props) {
+        super(props);
+        this.state = {
+            showButton: true
+        };
+    }
 	render() {
 		return (
 			<div>

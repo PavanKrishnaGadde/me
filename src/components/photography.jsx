@@ -6,7 +6,7 @@ export default class Photography extends Component {
 	render() {
 		return (
 			<div>
-				<section className="colorlib-work" data-section="projects">
+				<section className="colorlib-work" data-section="photography">
 					<div className="colorlib-narrow-content">
 						<div className="row">
 							<div className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">

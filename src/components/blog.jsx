@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { blogData } from '../utils/constants';
+import { Link } from "react-router-dom";
 
 export default class Blog extends Component {
 	constructor(props) {
@@ -39,9 +40,9 @@ export default class Blog extends Component {
 								))
 							}
 						</div>
-						{this.state.visibleBlogsCount<blogData.length && <div className="row">
+						{this.state.visibleBlogsCount<blogData.length || <div className="row">
 							<div className="col-md-4 animate-box">
-								<button onClick={this.onLoadMore} className="btn btn-primary btn-lg btn-load-more">Load more <i className="icon-reload" /></button>
+								<Link to="/blog"><button onClick={this.onLoadMore} className="btn btn-primary btn-lg btn-load-more">Load More<i className="icon-reload" /></button></Link>
 							</div>
 						</div>}
 					</div>

@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <ul className="row">
+          {/* <ul className="row">
             <li className="col-sm-4">
               <Link to="/me">Home</Link>
             </li>
@@ -25,7 +25,7 @@ class App extends Component {
             <li className="col-sm-4">
               <Link to="/photography">Photography</Link>
             </li>
-          </ul>
+          </ul> */}
 
           <Switch>
             <Route path="/photography">

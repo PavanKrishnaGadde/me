@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import { blogData } from '../utils/constants';
 
 export default class Blog extends Component {
+	constructor(props) {
+        super(props);
+        this.state = {
+            visibleBlogsCount: 3
+        };
+    }
+
+	onLoadMore = () => {
+		this.setState({visibleBlogsCount: this.state.visibleBlogsCount+3});
+	}
 	render() {
 		return (
 			<div>
@@ -15,8 +25,8 @@ export default class Blog extends Component {
 						</div>
 						<div className="row">
 							{
-								blogData && blogData.map((data) => (
-									<div className="col-md-4 col-sm-6 animate-box" data-animate-effect={data.animation}>
+								blogData && blogData.filter(d => d.id <= this.state.visibleBlogsCount).map((data) => (
+									<div className={`col-md-4 col-sm-6 ${data.id<=3 ? 'animate-box':''}`} data-animate-effect={data.animation}>
 										<div className="blog-entry">
 											<a href={data.refUrl} className="blog-img"><img src={data.imageUrl} className="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com" /></a>
 											<div className="desc">
@@ -29,11 +39,11 @@ export default class Blog extends Component {
 								))
 							}
 						</div>
-						<div className="row">
-							<div className="col-md-12 animate-box">
-								<p><a href="#" className="btn btn-primary btn-lg btn-load-more">Load more <i className="icon-reload" /></a></p>
+						{this.state.visibleBlogsCount<blogData.length && <div className="row">
+							<div className="col-md-4 animate-box">
+								<button onClick={this.onLoadMore} className="btn btn-primary btn-lg btn-load-more">Load more <i className="icon-reload" /></button>
 							</div>
-						</div>
+						</div>}
 					</div>
 				</section>
 			</div>

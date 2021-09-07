@@ -17,7 +17,7 @@ class App extends Component {
         <div>
           <ul className="row">
             <li className="col-sm-4">
-              <Link to="/">Home</Link>
+              <Link to="/me">Home</Link>
             </li>
             <li className="col-sm-4">
               <Link to="/blog">blog</Link>
@@ -34,7 +34,7 @@ class App extends Component {
             <Route path="/blog">
               <Blog />
             </Route>
-            <Route path="/">
+            <Route path="/me">
               <Main />
             </Route>
           </Switch>

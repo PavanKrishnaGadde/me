@@ -71,6 +71,14 @@ export const blogData = [
     }
 ]
 
+export const profileLinks = {
+    facebook: 'https://www.facebook.com/PavanKrishnaGadde',
+    instagram: 'https://www.instagram.com/_pavan_krishna_/',
+    twitter: 'https://twitter.com/pkgadde',
+    linkedin: 'https://www.linkedin.com/in/pavankrishnagadde/',
+    github: 'https://github.com/PavanKrishnaGadde'
+}
+
 export const timelineData = [
     {
         id: 1,

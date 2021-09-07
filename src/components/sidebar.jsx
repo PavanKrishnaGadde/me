@@ -1,7 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { profileLinks } from '../utils/constants';
 
 export default class Sidebar extends Component {
   render() {
+    const {facebook, instagram, linkedin, twitter, github} = profileLinks;
     return (
       <div>
         <div>
@@ -18,19 +20,19 @@ export default class Sidebar extends Component {
                   <li className="active"><a href="#home" data-nav-section="home">Introduction</a></li>
                   <li><a href="#about" data-nav-section="about">About</a></li>
                   <li><a href="#timeline" data-nav-section="timeline">Timeline</a></li>
-                  <li><a href="#" data-nav-section="projects">Photography</a></li>
-                  <li><a href="#" data-nav-section="blog">Blog</a></li>
-                  <li><a href="#" data-nav-section="contactme">Contact Me</a></li>
+                  <li><a href="#photography" data-nav-section="photography">Photography</a></li>
+                  <li><a href="#blog" data-nav-section="blog">Blog</a></li>
+                  <li><a href="#contactme" data-nav-section="contactme">Contact Me</a></li>
                 </ul>
               </div>
             </nav>
             <nav id="colorlib-main-menu" className="animated flipInX contact-icons">
               <ul>
-                <li><a href="https://www.facebook.com/G.P.Krishna.18" target="_blank" rel="noopener noreferrer"><i className="icon-facebook2" /></a></li>
-                <li><a href="https://twitter.com/secularkrishna" target="_blank" rel="noopener noreferrer"><i className="icon-twitter2" /></a></li>
-                <li><a href="https://www.instagram.com/_pavan_krishna_/" target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
-                <li><a href="https://www.linkedin.com/in/pavankrishnagadde/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
-                <li><a href="https://github.com/PavanKrishnaGadde" target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
+                <li><a href={facebook} target="_blank" rel="noopener noreferrer"><i className="icon-facebook2" /></a></li>
+                <li><a href={twitter} target="_blank" rel="noopener noreferrer"><i className="icon-twitter2" /></a></li>
+                <li><a href={instagram} target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
+                <li><a href={linkedin} target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
+                <li><a href={github} target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
               </ul>
             </nav>
           </aside>

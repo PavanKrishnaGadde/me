@@ -6,9 +6,13 @@ export default class Photography extends Component {
 	constructor(props) {
         super(props);
         this.state = {
-            showButton: true
+            visiblePhotoCount: 3
         };
     }
+
+	onLoadMore = () => {
+		this.setState({visiblePhotoCount: this.state.visiblePhotoCount+3});
+	}
 	render() {
 		return (
 			<div>
@@ -22,8 +26,8 @@ export default class Photography extends Component {
 						</div>
 						<div className="row">
 							{
-								photographyData && photographyData.map((data) => (
-									<div key={data.id} className="col-md-4 animate-box" data-animate-effect={data.animation}>
+								photographyData && photographyData.filter(d => d.id <= this.state.visiblePhotoCount).map((data) => (
+									<div key={data.id} className={`col-md-4 ${data.id<=3 ? 'animate-box':''}`} data-animate-effect={data.animation}>
 										<div className="project" style={{ backgroundImage: `url(${data.imageUrl})` }}>
 											<div className="desc">
 												<div className="con">
@@ -31,8 +35,8 @@ export default class Photography extends Component {
 													<span>{data.name}</span>
 													<p className="icon">
 														<span><a href="https://www.instagram.com/illustrator.pk"><i className="icon-share3" /></a></span>
-														<span><a href="#"><i className="icon-eye" /> 100</a></span>
-														<span><a href="#"><i className="icon-heart" /> 49</a></span>
+														<span><a><i className="icon-eye" /> 100</a></span>
+														<span><a><i className="icon-heart" /> 49</a></span>
 													</p>
 												</div>
 											</div>
@@ -41,11 +45,11 @@ export default class Photography extends Component {
 								))
 							}
 						</div>
-						<div className="row">
-							<div className="col-md-12 animate-box">
-								<p><a href="#" className="btn btn-primary btn-lg btn-load-more">Load more <i className="icon-reload" /></a></p>
+						{this.state.visiblePhotoCount<photographyData.length && <div className="row">
+							<div className="col-md-4 animate-box">
+								<button onClick={this.onLoadMore} className="btn btn-primary btn-lg btn-load-more">Load more <i className="icon-reload" /></button>
 							</div>
-						</div>
+						</div>}
 					</div>
 				</section>
 			</div>

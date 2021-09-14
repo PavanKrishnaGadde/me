@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -8,7 +8,7 @@ import {
 import './App.css';
 import Main from './pages/Main';
 import Blog from './components/blog';
-import Photography from './components/photography';
+import Photography from './pages/Photography';
 
 class App extends Component {
   render() {

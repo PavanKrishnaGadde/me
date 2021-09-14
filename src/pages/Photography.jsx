@@ -21,7 +21,7 @@ export default class Photography extends Component {
 						<div className="row">
 							<div className="col-md-6 col-md-offset-3 col-md-pull-3" data-animate-effect="fadeInLeft">
 								<span className="heading-meta">My Work</span>
-								<h2 className="colorlib-heading animate-box">Recent Clicks</h2>
+								<h2 className="colorlib-heading">Recent Clicks</h2>
 							</div>
 						</div>
 						<div className="row">

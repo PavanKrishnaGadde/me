@@ -1,38 +1,48 @@
+import blog1 from '../images/blog1.jpg';
+import blog2 from '../images/blog2.jpg';
+import blog3 from '../images/blog3.jpg';
+import click1 from '../images/click1.PNG';
+import click2 from '../images/click2.PNG';
+import click3 from '../images/click3.PNG';
+import click4 from '../images/click4.PNG';
+import click5 from '../images/click5.PNG';
+import click6 from '../images/click6.PNG';
+
 export const photographyData = [
     {
         id: 1,
         name: 'Art Work',
-        imageUrl: 'images/click6.PNG',
+        imageUrl: click6,
         animation: 'fadeInLeft',
     },
     {
         id: 2,
         name: 'Sunset',
-        imageUrl: 'images/click1.PNG',
+        imageUrl: click1,
         animation: 'fadeInRight',
     },
     {
         id: 3,
         name: 'Martyrs',
-        imageUrl: 'images/click2.PNG',
+        imageUrl: click2,
         animation: 'fadeInTop',
     },
     {
         id: 4,
         name: 'Matri Mandir',
-        imageUrl: 'images/click3.PNG',
+        imageUrl: click3,
         animation: 'fadeInBottom',
     },
     {
         id: 5,
         name: 'French Colony',
-        imageUrl: 'images/click4.PNG',
+        imageUrl: click4,
         animation: 'fadeInLeft',
     },
     {
         id: 6,
         name: 'Lotus',
-        imageUrl: 'images/click5.PNG',
+        imageUrl: click5,
         animation: 'fadeInRight',
     }
 ]
@@ -45,7 +55,7 @@ export const blogData = [
         blogName: 'TECHNOZION',
         date: 'September 22, 2018',
         refUrl: 'https://blog.technozion.org/the-future/',
-        imageUrl: 'images/blog1.jpg',
+        imageUrl: blog1,
         animation: 'fadeInLeft',
         description: 'What it is to meet the future? Do you think its doing space travel in a time machine, meeting future self and feeling astounding? It is all fictional which is not the engineers perspective. Meeting the future is not going in search of it, its essentially creating it'
     },
@@ -55,7 +65,7 @@ export const blogData = [
         blogName: 'TECHNOZION',
         date: 'October 6, 2017',
         refUrl: 'https://blog.technozion.org/the-future/',
-        imageUrl: 'images/blog2.jpg',
+        imageUrl: blog2,
         animation: 'fadeInRight',
         description: '"GOLD IS A VALUABLE METAL.". Yes, we all know that.But whom should we appreciate for that metal? If we just rejoinder it as Mother Earth then we will be called as biased.'
     },
@@ -65,7 +75,7 @@ export const blogData = [
         blogName: 'SNH BLOG',
         date: 'December 9, 2018 ',
         refUrl: 'https://snhblog.home.blog/2018/12/09/science-as-a-hobby-art-of-life/',
-        imageUrl: 'images/blog3.jpg',
+        imageUrl: blog3,
         animation: 'fadeInLeft',
         description: 'Science isn’t just a subject in College. It’s a part of our everyday lives. Science may be an integral part of your life and you may not even realize it. Science is all around us – it’s in our homes, the vehicles we drive, outside in nature and in the foods we eat. '
     }

@@ -80,6 +80,7 @@ export const profileLinks = {
     github: 'https://github.com/PavanKrishnaGadde'
 }
 
+
 export const timelineData = [
     {
         id: 1,
@@ -112,4 +113,58 @@ export const timelineData = [
         description: 'I have completed my higher secondary education with major subjects as Physics,Chemistry & Maths with 98.6 merit. During my time at school, I have developed interest in solving complex problems of the fundamental physics which helped me to improve my understanding of any problem and also my mathematical skills to actually solve the problems.'
     },
 
+]
+
+export const aboutData = [
+    {
+        id: 1,
+        heading: 'Web Development',
+        description: 'I have experience building websites and chrome extentions using JavaScript, React, HTML, CSS, Spring Boot, Hibernate, SQL',
+        iconName: 'icon-bulb',
+        iconColour: 'color-1'
+    },
+    {
+        id: 2,
+        heading: 'Data Structures & Algorithms',
+        description: 'I have good knowledge over fundamental concepts of DSA and will always be enthusiastic to apply those concepts to solve real world problems',
+        iconName: 'icon-phone3',
+        iconColour: 'color-3'
+    },
+    {
+        id: 3,
+        heading: 'Machine Learning',
+        description: 'I have a good understanding of various topics of machine learning. I have published a research paper on deep learning in TENCON 2019 IEEE Conference',
+        iconName: 'icon-data',
+        iconColour: 'color-5'
+    }
+]
+
+export const introData = [
+    {
+        id: 1,
+        introLine1: 'Hi! ',
+        introLine2: 'I\'m Pavan',
+        backgroundImage: 'url(images/pavan32.PNG)',
+        buttonLabel: 'View CV',
+        buttonLink: 'https://drive.google.com/file/d/168vIxEhan6dr0wkqBEl0K32bcxnrIS1l/view?usp=sharing',
+        buttonIcon: 'icon-download4'
+    },
+    {
+        id: 2,
+        introLine1: 'I love building',
+        introLine2: 'THINGS !!',
+        backgroundImage: 'url(./images/pavan6.PNG)',
+        buttonLabel: 'View Projects',
+        buttonLink: 'https://github.com/PavanKrishnaGadde',
+        buttonIcon: 'icon-briefcase3'
+    },
+    {
+        id: 3,
+        introLine1: 'I often ',
+        introLine2: 'Write ...',
+        backgroundImage: 'url(images/pavan22.PNG)',
+        buttonLabel: 'View Blog ',
+        buttonLink: 'https://snhblog.home.blog/',
+        buttonIcon: 'icon-book'
+    }
 ]

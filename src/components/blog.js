@@ -7,7 +7,7 @@ export const Blog = () => (
 		<section className="colorlib-blog" data-section="blog">
 			<div className="colorlib-narrow-content">
 				<div className="row">
-					<div className="col-md-6 col-md-offset-3 col-md-pull-3" data-animate-effect="fadeInLeft">
+					<div className="col-md-6 col-md-offset-3 col-md-pull-3" >
 						<span className="heading-meta">Read</span>
 						<h2 className="colorlib-heading">Recent Blogs</h2>
 					</div>

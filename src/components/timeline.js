@@ -27,7 +27,7 @@ export const  Timeline = () => (
                   </div>
                 </article>
               ))}
-              <article className="timeline-entry begin" data-animate-effect="fadeInBottom">
+              <article className="timeline-entry begin" >
                 <div className="timeline-entry-inner">
                   <div className="timeline-icon color-none">
                   </div>

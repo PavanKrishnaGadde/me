@@ -6,7 +6,7 @@ export const Sidebar = () => {
     return (
       <div>
         <div>
-          <nav href="#navbar" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
+          <nav href="#navbar" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"><i /></nav>
           <aside id="colorlib-aside" className="border js-fullheight">
             <div className="text-center">
               <div className="author-img animated pulse" style={{ backgroundImage: 'url(images/pavan.jpg)' }} />
@@ -17,7 +17,7 @@ export const Sidebar = () => {
               <div id="navbar" className="collapse">
                 <ul>
                   <li className="active"><a href="#home" data-nav-section="home">Introduction</a></li>
-                  <li><a href=  "#about" data-nav-section="about">About</a></li>
+                  <li><a href="#about" data-nav-section="about">About</a></li>
                   <li><a href="#timeline" data-nav-section="timeline">Timeline</a></li>
                   <li><a href="#photography" data-nav-section="photography">Photography</a></li>
                   <li><a href="#blog" data-nav-section="blog">Blog</a></li>

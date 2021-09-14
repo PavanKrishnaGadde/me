@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { timelineData } from '../utils/constants';
 
 export const  Timeline = () => (

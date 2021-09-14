@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { profileLinks } from '../utils/constants';
 
-export default class Sidebar extends Component {
-  render() {
+export const Sidebar = () => {
     const {facebook, instagram, linkedin, twitter, github} = profileLinks;
     return (
       <div>
@@ -40,4 +39,3 @@ export default class Sidebar extends Component {
       </div>
     )
   }
-}

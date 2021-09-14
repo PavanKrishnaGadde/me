@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css';
-import Sidebar from '../components/sidebar'
-import Introduction from '../components/introduction'
-import About from '../components/about'
-import Timeline from '../components/timeline'
-import Photography from '../components/photography'
-import Blog from '../components/blog'
+import {Sidebar} from '../components/sidebar'
+import {Introduction} from '../components/introduction'
+import {About} from '../components/about'
+import {Timeline} from '../components/timeline'
+import {Photography} from '../components/photography'
+import {Blog} from '../components/blog'
 import ContactMe from '../components/contactme';
 
 class Main extends Component {

@@ -15,7 +15,7 @@ export default class ContactMe extends React.Component {
             <section className="colorlib-blog mb-4 contact-form" data-section="contactme">
                 <div className="colorlib-narrow-content">
                     <div className="row">
-                        <div className="col-md-12 col-md-offset-9 col-md-pull-9 animate-box" data-animate-effect="fadeInRight">
+                        <div className="col-md-12 col-md-offset-9 col-md-pull-9" data-animate-effect="fadeInRight">
                             <span className="heading-meta">Contact</span>
                             <h2 className="colorlib-heading">Contact Me</h2>
                             <p className="w-responsive mx-auto mb-5">Do you have any questions or suggestions? Please feel free to contact me.</p>
@@ -37,7 +37,7 @@ export default class ContactMe extends React.Component {
                                         <div className="row">
                                             <div className="col-md-8">
                                                 <div className="md-form mb-0">
-                                                    <label for="subject" className="">Name</label>
+                                                    <label htmlFor="subject" className="">Name</label>
                                                     <input type="text" id="name" name="name" className="form-control" />
                                                 </div>
                                             </div>
@@ -45,7 +45,7 @@ export default class ContactMe extends React.Component {
                                         <div className="row">
                                             <div className="col-md-8">
                                                 <div className="md-form mb-0">
-                                                    <label for="email" className="">Your email</label>
+                                                    <label htmlFor="email" className="">Your email</label>
                                                     <input type="text" id="email" name="email" className="form-control" />
                                                 </div>
                                             </div>
@@ -53,7 +53,7 @@ export default class ContactMe extends React.Component {
                                         <div className="row">
                                             <div className="col-md-12">
                                                 <div className="md-form">
-                                                    <label for="message">Your message</label>
+                                                    <label htmlFor="message">Your message</label>
                                                     <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
                                                 </div>
 

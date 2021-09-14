@@ -35,8 +35,8 @@ export default class Photography extends Component {
 													<span>{data.name}</span>
 													<p className="icon">
 														<span><a href="https://www.instagram.com/illustrator.pk"><i className="icon-share3" /></a></span>
-														<span><a><i className="icon-eye" /> 100</a></span>
-														<span><a><i className="icon-heart" /> 49</a></span>
+														<span><a href="https://www.instagram.com/illustrator.pk"><i className="icon-eye" /> 100</a></span>
+														<span><a href="https://www.instagram.com/illustrator.pk"><i className="icon-heart" /> 49</a></span>
 													</p>
 												</div>
 											</div>

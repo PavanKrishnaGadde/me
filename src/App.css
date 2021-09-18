@@ -31,3 +31,53 @@
     transform: rotate(360deg);
   }
 }
+
+.photo-details {
+  background-color: rgb(47, 61, 78);
+  padding: 5px 0px 30px 0px;
+  height: 900px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.photo-details .photo-wrapper {
+  width: 80%;
+  height: 900px;
+  margin: 30px auto;
+  border: 12px solid white;
+  margin-bottom: 30px;
+}
+
+.photo-details .header {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(236, 192, 81);
+  font-size: 50px;
+  width: fit-content;
+  padding: 0px 30px;
+  margin: 10px auto;
+}
+
+.photo-details .photo-wrapper .photo {
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    .photo-details .photo-wrapper {
+      width: 80%;
+      height: 400px;
+    }    
+  }

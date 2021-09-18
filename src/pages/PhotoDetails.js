@@ -12,8 +12,10 @@ export const PhotoDetails = () => {
 
     return (
         <div className="photo-details">
-            <h2>{name}</h2>
-            <div className="photo" style={{ backgroundImage: `url(${data.imageUrl})`, height: '550px', width: '700px' }}></div>
+            <h1 className="header">{name}</h1>
+            <div className="photo-wrapper">
+                <div className="photo" style={{ backgroundImage: `url(${data.imageUrl})`}}></div>
+            </div>
         </div>
     );
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import { profileLinks } from '../utils/constants';
 
 export const Sidebar = () => {

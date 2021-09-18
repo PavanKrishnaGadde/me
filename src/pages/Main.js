@@ -6,7 +6,7 @@ import {About} from '../components/about'
 import {Timeline} from '../components/timeline'
 import {Photography} from '../components/photography'
 import {Blog} from '../components/blog'
-import ContactMe from '../components/contactme';
+import {ContactMe} from '../components/contactme';
 
 class Main extends Component {
   render() {

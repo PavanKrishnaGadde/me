@@ -3,11 +3,12 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 import './App.css';
 import Main from './pages/Main';
-import Blog from './pages/Blog';
-import Photography from './pages/Photography';
+import {Blog} from './pages/Blog';
+import {Photography} from './pages/Photography';
+import {PhotoDetails} from './pages/PhotoDetails';
 
 class App extends Component {
   render() {
@@ -15,6 +16,9 @@ class App extends Component {
       <Router basename="/">
         <div>
           <Switch>
+          <Route path="/photo/:name">
+              <PhotoDetails />
+            </Route>
             <Route path="/photography">
               <Photography />
             </Route>

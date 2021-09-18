@@ -1,4 +1,3 @@
-import React from "react";
 import {introData} from '../utils/constants';
 
 export const Introduction = () => (

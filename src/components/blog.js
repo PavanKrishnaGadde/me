@@ -1,17 +1,12 @@
-import React from 'react';
 import { blogData } from '../utils/constants';
+import { Heading } from '../common/Heading';
 import { Link } from "react-router-dom";
 
 export const Blog = () => (
 	<div>
 		<section className="colorlib-blog" data-section="blog">
 			<div className="colorlib-narrow-content">
-				<div className="row">
-					<div className="col-md-6 col-md-offset-3 col-md-pull-3" >
-						<span className="heading-meta">Read</span>
-						<h2 className="colorlib-heading">Recent Blogs</h2>
-					</div>
-				</div>
+				<Heading mainHeading={'Read'} subHeading={'Recent Blogs'} />
 				<div className="row">
 					{blogData && blogData.map((data) => (
 						<div key={data.id} className="col-md-4 col-sm-6">

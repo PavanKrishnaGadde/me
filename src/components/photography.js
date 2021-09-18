@@ -1,17 +1,12 @@
-import React from 'react'
 import { photographyData } from '../utils/constants';
+import { Heading } from '../common/Heading';
 import { Link } from "react-router-dom";
 
 export const Photography = () => (
 	<div>
 		<section className="colorlib-work" data-section="photography">
 			<div className="colorlib-narrow-content">
-				<div className="row">
-					<div className="col-md-6 col-md-offset-3 col-md-pull-3" data-animate-effect="fadeInLeft">
-						<span className="heading-meta">My Work</span>
-						<h2 className="colorlib-heading">Recent Clicks</h2>
-					</div>
-				</div>
+				<Heading mainHeading={'My Work'} subHeading={'Recent Clicks'} />
 				<div className="row">
 					{photographyData && photographyData.slice(3).map((data) => (
 						<div key={data.id} className="col-md-4">

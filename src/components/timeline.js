@@ -1,16 +1,11 @@
-import React from 'react'
 import { timelineData } from '../utils/constants';
+import { Heading } from '../common/Heading';
 
 export const  Timeline = () => (
   <div>
     <section className="colorlib-experience" data-section="timeline">
       <div className="colorlib-narrow-content">
-        <div className="row">
-          <div className="col-md-6 col-md-offset-3 col-md-pull-3">
-            <span className="heading-meta">highlights</span>
-            <h2 className="colorlib-heading">Timeline</h2>
-          </div>
-        </div>
+        <Heading mainHeading={'Education and Experience'} subHeading={'Timeline'} />
         <div className="row">
           <div className="col-md-12">
             <div className="timeline-centered">

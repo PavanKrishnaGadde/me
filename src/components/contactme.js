@@ -8,9 +8,9 @@ export const ContactMe = () => {
     const getFromInput = (label, id, type, isTextArea = false) => {
         return (
             <div className="row">
-                <div className="col-md-8">
-                    <div className="md-form">
-                        <label htmlFor={type} >{label}</label>
+                <div className="col-md-12">
+                    <div className="contact-input">
+                        <label className="label" htmlFor={type} >{label}</label>
                         {isTextArea ? <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
                                     : <input type="text" id={id} name={id} className="form-control" />}
                     </div>

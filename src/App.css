@@ -81,3 +81,15 @@
       height: 400px;
     }    
   }
+
+.contact-input {
+  margin: 10px 0px;
+}
+
+.contact-input .label {
+  display: block;
+}
+
+.contact-input .form-control {
+ width: 100%;
+}

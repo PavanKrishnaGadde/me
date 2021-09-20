@@ -1711,12 +1711,6 @@
 .icon-stackoverflow:before {
   content: "\eb00";
 }
-.icon-pinterest:before {
-  content: "\eb01";
-}
-.icon-pinterest2:before {
-  content: "\eb02";
-}
 .icon-xing:before {
   content: "\eb03";
 }
@@ -1789,4 +1783,3 @@
 .icon-IcoMoon:before {
   content: "\eb1a";
 }
-

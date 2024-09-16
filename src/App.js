@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
-  HashRouter as Router,
-  Switch,
+  BrowserRouter as Router,
+  Routes,
   Route,
 } from 'react-router-dom';
 import './App.css';
@@ -15,20 +15,12 @@ class App extends Component {
     return (
       <Router basename="/">
         <div>
-          <Switch>
-          <Route path="/photo/:name">
-              <PhotoDetails />
-            </Route>
-            <Route path="/photography">
-              <Photography />
-            </Route>
-            <Route path="/blog">
-              <Blog />
-            </Route>
-            <Route exact path="/">
-              <Main />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route element={<PhotoDetails />}  path="/photo/:name" />
+            <Route element={<Photography />} path="/photography" />
+            <Route element={<Blog />} path="/blog" />
+            <Route element={<Main />} path="/" />
+          </Routes>
         </div>
       </Router>
     );

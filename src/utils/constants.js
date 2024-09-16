@@ -81,62 +81,99 @@ export const profileLinks = {
 }
 
 
-export const timelineData = [
+export const experienceData = [
     {
         id: 1,
         position: 'Applications Engineer at Oracle',
         time:'Septemer 2021 - present',
-        description: 'I\'m working as full stack developer in Oracle Cloud Infrastructure team. My work includes building responsive applications using react framwork in front and RESTful micro-services in backend using SpringBoot framework.'
+        descriptions: [
+            'Developed various features in Open Storefront Framework (OSF), including server-side rendering, CLI tooling, SEO, configurable widgets using JS, React and nodeJS, and state management using Redux, along with creating unit tests in Jest to ensure robust and error-free code.',
+            'Contributed to the development of design studio, which is a low-code platform with a drag-and-drop UI for creating page layouts. Developed multiple APIs to support the platform’s functionality using Java and Oracle ATG.',
+            'Worked on multiple POCs to create diverse UI components, optimize caching using Redis, and explore innovative solutions in Generative AI-related projects.'
+        ]
     },
     {
         id: 2,
         position: 'Associate Software Engineer at Amdocs',
         time:'July 2019 - Septemer 2021',
-        description: 'I worked as full stack developer in digital team of Amdocs. My work includes building responsive applications using react framwork in front and RESTful APIs in backend using SpringBoot framework. I also good knowledge in using continous deployment and integration tools like perforce and jenkins'
+        descriptions: [
+            'Contributed to the development of self-service and retail portals for telecommunications clients, utilizing React, Redux, and Adobe Experience Manager.',
+            'Spearheaded the development of a critical change plan flow for a Customer Service Agent Application, working with a UK-based telecommunication client.',
+            'Developed APIs for telecommunications self-service workflows, utilizing Java and the Jersey framework to seamlessly integrate and consolidate data from multiple systems, including Amdocs CRM, Order Management System(OMS), and Billing, ensuring efficient data flow across platforms.'
+        ]
     },
     {
         id: 3,
         position: 'Internship at SanDisk',
         time:'May 2018 - July 2018',
-        description: 'I have done summer intership at SanDisk (Western Digital) as a Software and Hardware Intern in the Systems Design team. My major part work was on python and Verilog. I designed an application for fault detection and performance analysis'
-    },
-    {
-        id: 4,
-        position: 'Bachelor of Technology at NIT Warangal',
-        time:'2015 - 2019',
-        description: 'I am pursuing my under-graduation studies with major in E.C.E (Electronics & Communication Engineering). I have taken courses like DSA, OOPs, Computer Networks, IOT, Web-Data Management over the years and have better understanding of these subjects.I have also been part of S.B.G.(Student Body Govenance) scince my first year of college.'
-    },
-    {
-        id: 5,
-        position: 'Primary and Higher Education',
-        time:'2003 - 2015',
-        description: 'I have completed my higher secondary education with major subjects as Physics,Chemistry & Maths with 98.6 merit. During my time at school, I have developed interest in solving complex problems of the fundamental physics which helped me to improve my understanding of any problem and also my mathematical skills to actually solve the problems.'
-    },
+        descriptions: ['Developed an SD Protocol Packet parser to parse all SD protocol data packets exchanged between an SD host and SD card (memory card), eliminating the need for external parsing tools and reducing overall costs for the project.']
+    }
+]
 
+export const educationData = [
+    {
+        id: 1,
+        position: 'Bachelor of Technology - NIT Warangal',
+        time:'2015 - 2019',
+        descriptions: ['secured 7.67 CGPA']
+    },
+    {
+        id: 2,
+        position: 'Intetermediate - Sasi Junior College',
+        time:'2013 - 2015',
+        descriptions: ['secured 98.6%']
+    },
+    {
+        id: 3,
+        position: 'SSC - Vidya Vikas School',
+        time:'2013',
+        descriptions: ['secured 9.7 GPA']
+    }
 ]
 
 export const aboutData = [
     {
         id: 1,
-        heading: 'Web Development',
-        description: 'I have experience building websites and chrome extentions using JavaScript, React, HTML, CSS, Spring Boot, Hibernate, SQL',
+        heading: 'Front End Development',
+        descriptions: ['I have strong expertise in frontend development, particularly with React, Redux, and JavaScript, along with a solid foundation in HTML and CSS. I’ve worked extensively on building intuitive and high-performance user interfaces for self-service and retail portals, and I’m comfortable using frameworks like Adobe Experience Manager.', 'I’ve implemented complex features such as search filters, interactive tables, and data visualizations, and have successfully led key UI projects, including the integration of CPQ systems and critical workflows for customer applications. My focus is always on delivering responsive, user-friendly solutions, and I take pride in my adaptability and technical proficiency in frontend development.'],
         iconName: 'icon-bulb',
         iconColour: 'color-1'
     },
     {
         id: 2,
-        heading: 'Data Structures & Algorithms',
-        description: 'I have good knowledge over fundamental concepts of DSA and will always be enthusiastic to apply those concepts to solve real world problems',
+        heading: 'Backend Development',
+        descriptions: ['I have substantial experience in backend development, primarily working with Java and Oracle ATG. I have developed custom APIs for telecommunications workflows, using the Jersey framework to integrate data from various systems like Amdocs CRM, Order Management System (OMS), and Billing. I am skilled at extending core APIs and creating new ones to meet specific client requirements.', 'Additionally, I have worked with Spring Boot in side projects, which has given me a solid understanding of its architecture. My focus on seamless integration and optimized performance allows me to ensure efficient data flow and functionality across different platforms.'],
+        iconName: 'icon-phone3',
+        iconColour: 'color-2'
+    },
+    {
+        id: 3,
+        heading: 'Networking & Databases',
+        descriptions: ['I have a strong understanding of the networks that connect various components in a system, including frontend applications, backend application servers, and databases. I’m well-versed in how these systems communicate and interact to ensure smooth data flow and performance.', 'Additionally, I have a solid grasp of Database Management Systems (DBMS), including key concepts like ACID properties, relationships, constraints, and how they impact the integrity and efficiency of database operations. This knowledge enables me to design and maintain robust, reliable systems that integrate all components effectively.'],
         iconName: 'icon-phone3',
         iconColour: 'color-3'
     },
     {
-        id: 3,
+        id: 4,
+        heading: 'System design and Architecture',
+        descriptions: ['I have a solid understanding of system design and architecture, with experience in connecting various components like frontend applications, backend servers, and databases to ensure seamless communication and performance. I’m skilled in designing scalable, efficient systems by leveraging my knowledge of networking, API integration, and database management systems, including ACID properties, relationships, and constraints. My approach to system design focuses on optimizing data flow, ensuring high availability, and maintaining security.'],
+        iconName: 'icon-phone3',
+        iconColour: 'color-3'
+    },
+    {
+        id: 5,
         heading: 'Machine Learning',
-        description: 'I have a good understanding of various topics of machine learning. I have published a research paper on deep learning in TENCON 2019 IEEE Conference',
+        descriptions: ['I have a good understanding of various machine learning topics and have furthered my knowledge through research. I published a research paper on deep learning, which was presented at the TENCON 2019 IEEE Conference. My interest in machine learning allows me to explore innovative solutions and stay updated with advancements in the field.'],
         iconName: 'icon-data',
-        iconColour: 'color-5'
-    }
+        iconColour: 'color-4'
+    },
+    {
+        id: 6,
+        heading: 'Data Structures and Algorithms (DSA)',
+        descriptions: ['I have a strong grasp of fundamental concepts in Data Structures and Algorithms and am always enthusiastic about applying these principles to solve real-world problems. My problem-solving approach is driven by a solid understanding of algorithmic efficiency and data handling, which I incorporate into my work to develop optimized and scalable solutions.'],
+        iconName: 'icon-data',
+        iconColour: 'color-4'
+    },
 ]
 
 export const introData = [

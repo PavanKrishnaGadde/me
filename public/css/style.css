@@ -76,6 +76,7 @@ figure {
   padding-top: 40px;
   float: left;
   width: 300px;
+  height: 100vh;
   position: fixed;
   overflow: hidden;
   z-index: 1001;
@@ -527,7 +528,7 @@ body.offcanvas {
   position: absolute;
   display: block;
   width: 4px;
-  background: #f2f3f7;
+  background: whitesmoke;
   top: 20px;
   bottom: 20px;
   margin-left: 29px; }
@@ -553,9 +554,9 @@ body.offcanvas {
   -ms-border-radius: 50%;
   border-radius: 50%;
   text-align: center;
-  -moz-box-shadow: 0 0 0 5px #f2f3f7;
-  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
-  box-shadow: 0 0 0 5px #f2f3f7;
+  -moz-box-shadow: 0 0 0 5px whitesmoke;
+  -webkit-box-shadow: 0 0 0 5px whitesmoke;
+  box-shadow: 0 0 0 5px whitesmoke;
   line-height: 40px;
   float: left; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
@@ -576,7 +577,7 @@ body.offcanvas {
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
-  background: #f2f3f7;
+  background: whitesmoke;
   padding: 1.5em;
   margin-left: 60px;
   -webkit-background-clip: padding-box;
@@ -591,7 +592,7 @@ body.offcanvas {
   height: 0;
   border-style: solid;
   border-width: 9px 9px 9px 0;
-  border-color: transparent #f2f3f7 transparent transparent;
+  border-color: transparent whitesmoke transparent transparent;
   left: 0;
   top: 10px;
   margin-left: -9px; }

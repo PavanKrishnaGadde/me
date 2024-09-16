@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,21 +10,17 @@ import {Blog} from './pages/Blog';
 import {Photography} from './pages/Photography';
 import {PhotoDetails} from './pages/PhotoDetails';
 
-class App extends Component {
-  render() {
-    return (
-      <Router basename="/">
-        <div>
-          <Routes>
-            <Route element={<PhotoDetails />}  path="/photo/:name" />
-            <Route element={<Photography />} path="/photography" />
-            <Route element={<Blog />} path="/blog" />
-            <Route element={<Main />} path="/" />
-          </Routes>
-        </div>
-      </Router>
-    );
-  }
-}
+export const App = () => (
+  <Router basename="/">
+    <div>
+      <Routes>
+        <Route element={<PhotoDetails />}  path="/photo/:name" />
+        <Route element={<Photography />} path="/photography" />
+        <Route element={<Blog />} path="/blog" />
+        <Route element={<Main />} path="/" />
+      </Routes>
+    </div>
+  </Router>
+);
 
 export default App;

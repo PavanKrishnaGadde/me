@@ -54,7 +54,7 @@ export const ContactMe = () => {
     };
 
     return (
-        <section className="colorlib-blog mb-4 contact-form" data-section="contactme">
+        <section className="colorlib-blog mb-4 contact-form" id="contactme" data-section="contactme">
             <div className="colorlib-narrow-content">
                 <div className="row">
                     <div className="col-md-12 col-md-offset-9 col-md-pull-9" >

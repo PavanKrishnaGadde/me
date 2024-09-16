@@ -2,7 +2,7 @@ import { Heading } from '../common/Heading';
 
 export const  Timeline = ({timelineData, mainHeading, subHeading, sectionId}) => (
   <div>
-    <section className="colorlib-experience" data-section={sectionId}>
+    <section className="colorlib-experience" id={sectionId} data-section={sectionId}>
       <div className="colorlib-narrow-content">
         <Heading mainHeading={mainHeading} subHeading={subHeading} />
         <div className="row">

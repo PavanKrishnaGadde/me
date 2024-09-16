@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Photography = () => (
 	<div>
-		<section className="colorlib-work" data-section="photography">
+		<section className="colorlib-work" id="photography" data-section="photography">
 			<div className="colorlib-narrow-content">
 				<Heading mainHeading={'My Work'} subHeading={'Recent Clicks'} />
 				<div className="row">

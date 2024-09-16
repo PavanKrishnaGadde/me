@@ -11,7 +11,7 @@ import {Photography} from './pages/Photography';
 import {PhotoDetails} from './pages/PhotoDetails';
 
 export const App = () => (
-  <Router basename="/">
+  <Router basename="/me/">
     <div>
       <Routes>
         <Route element={<PhotoDetails />}  path="/photo/:name" />

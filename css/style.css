@@ -222,6 +222,15 @@ figure {
   max-width: 1170px;
   margin: 0 auto;
 }
+
+.intro-color {
+  color: white;
+}
+.btn-learn {
+  color: white;
+  background-color: transparent;
+}
+
 #colorlib-main {
   width: calc(100% - 300px);
   float: right;

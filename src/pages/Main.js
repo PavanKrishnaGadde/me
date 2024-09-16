@@ -4,9 +4,8 @@ import {Sidebar} from '../components/sidebar'
 import {Introduction} from '../components/introduction'
 import {About} from '../components/about'
 import {Timeline} from '../components/timeline'
-import {Photography} from '../components/photography'
-import {Blog} from '../components/blog'
 import {ContactMe} from '../components/contactme';
+import { experienceData, educationData } from '../utils/constants';
 
 class Main extends Component {
   render() {
@@ -17,9 +16,8 @@ class Main extends Component {
           <div id="colorlib-main">
             <Introduction />
             <About />
-            <Timeline />
-            <Photography />
-            <Blog />
+            <Timeline sectionId="experience" mainHeading="Experience" subHeading="Here are the companies I have worked for" timelineData={experienceData} />
+            <Timeline sectionId="education" mainHeading="Education" subHeading="Here are the institutes I have received education from" timelineData={educationData} />
             <ContactMe />
           </div>
       	</div>

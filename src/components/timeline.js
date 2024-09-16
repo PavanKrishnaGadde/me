@@ -1,11 +1,10 @@
-import { timelineData } from '../utils/constants';
 import { Heading } from '../common/Heading';
 
-export const  Timeline = () => (
+export const  Timeline = ({timelineData, mainHeading, subHeading, sectionId}) => (
   <div>
-    <section className="colorlib-experience" data-section="timeline">
+    <section className="colorlib-experience" data-section={sectionId}>
       <div className="colorlib-narrow-content">
-        <Heading mainHeading={'Education and Experience'} subHeading={'Timeline'} />
+        <Heading mainHeading={mainHeading} subHeading={subHeading} />
         <div className="row">
           <div className="col-md-12">
             <div className="timeline-centered">
@@ -17,7 +16,7 @@ export const  Timeline = () => (
                     </div>
                     <div className="timeline-label">
                       <h2>{data.position} <span>{data.time}</span></h2>
-                      <p>{data.description}</p>
+                      <>{data.descriptions.map((description, index) => <p key={index}>{description}</p>)}</>
                     </div>
                   </div>
                 </article>

@@ -17,9 +17,9 @@ export const Sidebar = () => {
                 <ul>
                   <li className="active"><a href="#home" data-nav-section="home">Introduction</a></li>
                   <li><a href="#about" data-nav-section="about">About</a></li>
-                  <li><a href="#timeline" data-nav-section="timeline">Timeline</a></li>
-                  <li><a href="#photography" data-nav-section="photography">Photography</a></li>
-                  <li><a href="#blog" data-nav-section="blog">Blog</a></li>
+                  <li><a href="#skills" data-nav-section="skills">Skills</a></li>
+                  <li><a href="#experience" data-nav-section="experience">Experience</a></li>
+                  <li><a href="#education" data-nav-section="education">Education</a></li>
                   <li><a href="#contactme" data-nav-section="contactme">Contact Me</a></li>
                 </ul>
               </div>

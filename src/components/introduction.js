@@ -7,7 +7,7 @@ export const Introduction = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCurrentIndex(prev => (prev + 1)%introData.length+1);
-    }, [2000])
+    }, [4000])
 
     return () => {
       clearTimeout(timer);
@@ -17,12 +17,12 @@ export const Introduction = () => {
 
   return (
   <div>
-    <section id="colorlib-hero" className="js-fullheight" data-section="home">
+    <section id="introduction" className="js-fullheight" data-section="home">
       <div className="flexslider js-fullheight">
         <ul className="slides">
           {
             introData && introData.map((data) => (
-              <li key={data.id} style={{ display:  data.id === currentIndex ? 'block' : 'none', backgroundImage: data.backgroundImage, height: '100vh' }}>
+              <li key={data.id} className='slide' style={{ display:  data.id === currentIndex ? 'block' : 'none', backgroundImage: data.backgroundImage, height: '100vh' }}>
                 <div style={{opacity: data.id === currentIndex ? 1 : 0}} className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
                 <div className="slider-text-inner js-fullheight">
                 <h1 className="intro-color">{data.introLine1}<br />{data.introLine2}</h1>

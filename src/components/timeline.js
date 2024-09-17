@@ -1,6 +1,6 @@
 import { Heading } from '../common/Heading';
 
-export const  Timeline = ({timelineData, mainHeading, subHeading, sectionId}) => (
+export const  Timeline = ({timelineData, mainHeading, subHeading, sectionId, start=0}) => (
   <div>
     <section className="colorlib-experience" id={sectionId} data-section={sectionId}>
       <div className="colorlib-narrow-content">
@@ -11,7 +11,7 @@ export const  Timeline = ({timelineData, mainHeading, subHeading, sectionId}) =>
               {timelineData && timelineData.map((data) => (
                 <article key={data.id} className="timeline-entry">
                   <div className="timeline-entry-inner">
-                    <div className={`timeline-icon color-${data.id}`}>
+                    <div className={`timeline-icon color-${start + data.id}`}>
                       <i className="icon-pen2" />
                     </div>
                     <div className="timeline-label">

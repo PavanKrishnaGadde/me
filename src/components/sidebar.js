@@ -15,7 +15,7 @@ export const Sidebar = () => {
             <nav id="colorlib-main-menu" role="navigation" className="navbar">
               <div id="navbar" className="collapse">
                 <ul>
-                  <li className="active"><a href="#colorlib-hero" data-nav-section="home">Introduction</a></li>
+                  <li><a href="#introduction" data-nav-section="home">Introduction</a></li>
                   <li><a href="#about" data-nav-section="about">About</a></li>
                   <li><a href="#skills" data-nav-section="skills">Skills</a></li>
                   <li><a href="#experience" data-nav-section="experience">Experience</a></li>

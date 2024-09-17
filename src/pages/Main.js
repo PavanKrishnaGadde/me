@@ -16,8 +16,8 @@ class Main extends Component {
           <div id="colorlib-main">
             <Introduction />
             <About />
-            <Timeline sectionId="experience" mainHeading="Experience" subHeading="Here are the companies I have worked for" timelineData={experienceData} />
-            <Timeline sectionId="education" mainHeading="Education" subHeading="Here are the institutes I have received education from" timelineData={educationData} />
+            <Timeline start={3} sectionId="experience" mainHeading="Experience" subHeading="Here are the companies I have worked for" timelineData={experienceData} />
+            <Timeline start={1} sectionId="education" mainHeading="Education" subHeading="Here are the institutes I have received education from" timelineData={educationData} />
             <ContactMe />
           </div>
       	</div>

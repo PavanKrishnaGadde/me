@@ -9,7 +9,7 @@ export const Sidebar = () => {
           <aside id="colorlib-aside" className="border js-fullheight">
             <div className="text-center">
               <div className="author-img animated pulse" style={{ backgroundImage: 'url(images/pavan.jpg)' }} />
-              <h1 id="colorlib-logo" className="animated headShake"><a href="index.html">Pavan Krishna Gadde</a></h1>
+              <h1 id="colorlib-logo" className="animated headShake"><a>Pavan Krishna Gadde</a></h1>
               <span className="email"><i className="icon-mail"></i><a href="mailto:pavankrishna1729@gmail.com" target="_top">pavankrishna1729@gmail.com</a></span>
             </div>
             <nav id="colorlib-main-menu" role="navigation" className="navbar">

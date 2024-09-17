@@ -209,7 +209,7 @@
 
 	var sliderMain = function() {
 		
-	  	$('#colorlib-hero .flexslider').flexslider({
+	  	$('#introduction .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
 			directionNav: true,

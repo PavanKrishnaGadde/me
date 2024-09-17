@@ -3,7 +3,7 @@ import {aboutData} from '../utils/constants';
 
 export const About = () => (
     <div>
-        <section className="colorlib-about" data-section="about">
+        <section className="colorlib-about" id="about" data-section="about">
             <div className="colorlib-narrow-content">
                 <div className="row">
                     <div className="col-md-12">
@@ -21,7 +21,7 @@ export const About = () => (
                 </div>
             </div>
         </section>
-        <section className="colorlib-about" data-section="skills">
+        <section className="colorlib-about" id="skills" data-section="skills">
             <div className="colorlib-narrow-content">
                 <Heading mainHeading={'What I do?'} subHeading={'Here are some of my expertise'} />
                 <div className="row row-pt-md">

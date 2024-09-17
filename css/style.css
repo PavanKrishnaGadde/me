@@ -345,8 +345,13 @@ figure {
           font-weight: 400; }
           #introduction .flexslider .slider-text > .slider-text-inner .btn.btn-learn:focus, 
           #introduction .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
             color: white;
             border: 1px solid white;
+            width: fit-content;
+            gap: 0.5rem;
             background: transparent !important; }
             #introduction .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover,
               #introduction .flexslider .slider-text > .slider-text-inner .btn.btn-learn:focus-visible {

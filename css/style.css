@@ -343,12 +343,15 @@ figure {
           padding: 10px 15px !important;
           border: none;
           font-weight: 400; }
+          #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:focus, 
           #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
             color: white;
             border: 1px solid white;
             background: transparent !important; }
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
-              background: transparent !important;
+            #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover,
+              #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:focus-visible {
+                background: white !important;
+              color: black;
               border: 1px solid white !important; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
